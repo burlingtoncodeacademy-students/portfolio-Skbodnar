@@ -6,9 +6,11 @@ import HomeButton from "../HomeButton";
 function Contact() {
   return (
     <>
-      <HomeButton />
-      <p id="pageTitle"><pre>C ON T AC T.</pre></p>
-      <NavBar />
+      <div className="contact-section" id="contact">
+        <p id="pageTitle">
+          <pre>C ON T AC T.</pre>
+        </p>
+      </div>
     </>
   );
 }

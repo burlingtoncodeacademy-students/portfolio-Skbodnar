@@ -2,6 +2,31 @@
 body {
   background-color: antiquewhite;
 }
+
+a {
+  cursor: pointer;
+}
+
+.about-section {
+  height: 100vh;
+}
+
+.contact-section {
+  height: 100vh;
+}
+
+.curiosities-section {
+  height: 100vh;
+}
+
+.projects-section {
+  height: 100vh;
+}
+
+.workhistory-section {
+  height: 100vh;
+}
+
 /*Styling for skb title on home page */
 #nameTitle {
   text-align: center;
@@ -9,6 +34,7 @@ body {
   color: rgb(211, 159, 92);
   text-shadow: 30px 35px 35px rgb(110, 108, 108);
   text-transform: lowercase;
+
 }
 
 /*Button that appears in top left-hand side of each page linking user back to home page */
@@ -27,7 +53,7 @@ body {
 }
 
 /*Buttons linking to other website pages */
-.navButtons {
+/* .navButtons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,7 +61,31 @@ body {
   margin-left: 12vw;
   margin-right: 12vw;
   margin-top: 5vh;
+} */
+
+.navBar {
+  position: fixed;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  width: 100%;
+  justify-content: left;
+  align-items: space-between;
+  gap: .5em;
+  font-size: 1.3em;
+  padding-top: 3vh;
+  padding-left: 3vw;
+  z-index: 1;
 }
+
+/* underlines active nav element */
+.navBar > .active {
+  border-bottom: 1px solid rgb(110, 108, 108);
+}
+
+
+
 
 /* styling for navbar buttons */
 #buttons {
@@ -49,11 +99,6 @@ body {
   width: 200px;
   height: 30px;
   text-align: center;
-}
-
-/* styling for navbar buttons on hover */
-#buttons:hover {
-  background-color: rgb(211, 159, 92);
 }
 
 /* Rounded border to style header */
@@ -83,8 +128,6 @@ hr.roundedLine {
   display: block;
   margin-left: 12vw;
   margin-right: 5vw;
-
-
 }
 
 /*header for bio on about page */

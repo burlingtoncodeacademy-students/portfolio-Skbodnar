@@ -6,9 +6,11 @@ import NavBar from "../NavBar";
 function Projects() {
   return (
     <>
-      <HomeButton />
-      <p id="pageTitle"><pre>PR  O J E C TS.</pre></p>
-      <NavBar />
+      <div className="projects-section" id="projects">
+        <p id="pageTitle">
+          <pre>PR O J E C TS.</pre>
+        </p>
+      </div>
     </>
   );
 }

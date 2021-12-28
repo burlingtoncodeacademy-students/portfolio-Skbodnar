@@ -6,9 +6,11 @@ import NavBar from "../NavBar";
 function Curiosities() {
   return (
     <>
-      <HomeButton />
-      <p id="pageTitle"><pre>C UR IO SI TI ES.</pre></p>
-      <NavBar />
+      <div clasName="curiosities-section" id="curiosities">
+        <p id="pageTitle">
+          <pre>C UR IO SI TI ES.</pre>
+        </p>
+      </div>
     </>
   );
 }
