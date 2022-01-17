@@ -1,69 +1,132 @@
 /* Setting consistent background color for all webpages */
 body {
-  background-color: antiquewhite;
+  background-color: #43aa8b;
+}
+* {
+  margin: 0;
 }
 
 a {
   cursor: pointer;
+  /* transition: 3s ease-in; */
 }
 
+/* ---------------------------Footer */
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------Main Section */
+.main-section {
+  height: 100vh;
+}
+
+.main-header {
+  display: flex;
+  height: 100vh;
+  margin: 0px auto;
+  max-width: 1000px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+h1 {
+  font-size: 67pt;
+  padding: 0;
+}
+
+h4 {
+  font-size: 37pt;
+}
+
+p {
+  font-size: 16pt;
+}
+
+#resume {
+  border: 1px solid #f9c74f;
+  color: black;
+  margin-top: 3vh;
+  width: 125px;
+  height: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25pt;
+}
+
+/* ---------------------------About Section */
 .about-section {
   height: 100vh;
 }
+
+/*content for about page */
+#aboutContent {
+  display: flex;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 5vh;
+}
+
+/*bio on about page */
+#aboutBlurb {
+  display: block;
+
+  padding-right: 5vw;
+  align-self: center;
+}
+
+/*image on about page */
+#headshot {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* ---------------------------Experience Section */
+.workhistory-section {
+  height: 100vh;
+}
+
+/* ---------------------------Projects Section */
+.projects-section {
+  height: 100vh;
+}
+
+/* ---------------------------Contact Section */
 
 .contact-section {
   height: 100vh;
 }
 
-.curiosities-section {
-  height: 100vh;
-}
-
-.projects-section {
-  height: 100vh;
-}
-
-.workhistory-section {
-  height: 100vh;
-}
-
 /*Styling for skb title on home page */
 #nameTitle {
-  text-align: center;
-  font-size: 30vh;
-  color: rgb(211, 159, 92);
+  text-align: left;
+  color: #f9c74f;
   text-shadow: 30px 35px 35px rgb(110, 108, 108);
   text-transform: lowercase;
-
-}
-
-/*Button that appears in top left-hand side of each page linking user back to home page */
-#homeButton {
-  margin-top: 3vw;
-  margin-left: 5vw;
 }
 
 /*Title for each page */
 #pageTitle {
-  text-align: center;
-  color: rgb(211, 159, 92);
+  text-align: left;
+  color: #f9c74f;
   text-shadow: 10px 10px 25px rgb(110, 108, 108);
   text-transform: lowercase;
-  font-size: 5vh;
+  padding-top: 15vh;
+  font-size: 37pt;
+  margin-left: 15vw;
 }
 
-/*Buttons linking to other website pages */
-/* .navButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 0.5vw;
-  margin-left: 12vw;
-  margin-right: 12vw;
-  margin-top: 5vh;
-} */
-
-.navBar {
+.navBar-left {
   position: fixed;
   height: 5vh;
   display: flex;
@@ -71,68 +134,49 @@ a {
   top: 0;
   width: 100%;
   justify-content: left;
-  align-items: space-between;
-  gap: .5em;
   font-size: 1.3em;
   padding-top: 3vh;
-  padding-left: 3vw;
   z-index: 1;
+  color: black;
+  border-bottom: 1px solid #f9c74f;
+  background-color: #43aa8b;
 }
 
-/* underlines active nav element */
-.navBar > .active {
-  border-bottom: 1px solid rgb(110, 108, 108);
+.footer {
+  position: fixed;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 3vh;
+  z-index: 1;
+  color: black;
+  background-color: #43aa8b;
 }
 
-
-
+#icon {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin-right: 1.5vw;
+  gap: 0.5vw;
+}
 
 /* styling for navbar buttons */
 #buttons {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
-  margin-right: 25px;
-  margin-left: 25px;
-  border-radius: 2px;
-  border-radius: 75px;
-  width: 200px;
-  height: 30px;
-  text-align: center;
+  width: 100px;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 1vw;
+  align-items: center;
 }
 
-/* Rounded border to style header */
-hr.roundedLine {
-  border-top: 3px solid rgb(211, 159, 92);
-  border-radius: 5px;
-  margin-right: 12vw;
-  margin-left: 12vw;
-  margin-top: 3vh;
-}
-
-/*content for about page */
-#aboutContent {
-  margin-top: 10vh;
-}
-
-/*image on about page */
-#headshot {
-  display: block;
-  margin-right: 12vw;
-  float: right;
-  border-radius: 50%;
-  padding: 10px;
-}
-/*bio on about page */
-#aboutBlurb {
-  display: block;
-  margin-left: 12vw;
-  margin-right: 5vw;
-}
-
-/*header for bio on about page */
-#hello {
-  margin-left: 12vw;
-  color: rgb(53, 45, 35);
-  font-size: 5vh;
+.navBar > .active {
+  color: #f9c74f;
 }
