@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/main.css";
+import Footer from "./Footer"
 
 
 function MainTitle() {
@@ -8,7 +9,7 @@ function MainTitle() {
       <div className="main-header">
        
         <h1>Hey there,</h1>
-        <h2>I'm Sophie</h2>
+        <h2>I'm Sophie.</h2>
         <h4>
           I'm a{" "}
           <span id="background-emphasis">
@@ -19,6 +20,7 @@ function MainTitle() {
           that enables people to feel powerful and connected.
         </h4>
       </div>
+      <Footer />
     </>
   );
 }
