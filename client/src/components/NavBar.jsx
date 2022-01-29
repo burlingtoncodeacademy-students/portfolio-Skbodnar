@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/main.css";
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import resume from "../images/resume.pdf";
 
 function NavBar() {
   return (
@@ -9,16 +9,18 @@ function NavBar() {
       <div className="navBar-left">
         <Link
           activeClass="active"
-          id="buttons"
+          id="nav-name"
           to="main"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
         >
-          Top.
+          Sophie Bodnar
         </Link>
+      </div>
 
+      <div className="navBar-right">
         <Link
           activeClass="active"
           id="buttons"
@@ -28,7 +30,7 @@ function NavBar() {
           offset={0}
           duration={500}
         >
-          About.
+          About Me 
         </Link>
 
         <Link
@@ -40,7 +42,7 @@ function NavBar() {
           offset={0}
           duration={500}
         >
-          Experience.
+          Experience 
         </Link>
 
         <Link
@@ -52,23 +54,25 @@ function NavBar() {
           offset={0}
           duration={500}
         >
-          Projects.
+          Projects
         </Link>
+
+        <a href={resume} id="buttons">
+          Resume
+        </a>
 
         <Link
           activeClass="active"
-          id="buttons"
+          id="contact-button"
           to="contact"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
         >
-          Contact.
+          Contact
         </Link>
       </div>
-
-      
     </>
   );
 }
