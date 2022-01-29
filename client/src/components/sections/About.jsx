@@ -17,8 +17,7 @@ function About() {
               attention for how we continue to reach that potential. <br />
               <br />
               My background in storytelling, community-based advocacy, and
-              leadership development has shaped my motivation to use tech to create conditions for people to feel powerful and
-              connected, and live authentically with agency and dignity.
+              leadership development has shaped my motivation to use tech to create conditions for people to live authentically with agency and dignity.
               <br />
              
             </p>

@@ -1,10 +1,11 @@
 /* Setting consistent background color for all webpages */
 body {
   background-color: #43aa8b;
+  margin: 0;
+  --nav-load-time: 300ms;
 }
 * {
   margin: 0;
-  transition: all 0.3s ease 0s;
 }
 
 a {
@@ -38,6 +39,7 @@ a {
   padding: 0px;
   margin-left: 15vw;
   margin-right: 15vw;
+  animation: nav-load var(--nav-load-time) ease-in;
 }
 
 h1 {
@@ -170,8 +172,8 @@ h4 {
   padding-right: 3vw;
   align-items: center;
   font-weight: 700;
-  border-radius: 1rem;
-  background: white;
+
+  background: #f9c74f;
   font-size: 1rem;
   border: 0.125rem solid rgb(255, 255, 255);
   padding: 0.5rem 1.5rem;
@@ -179,10 +181,7 @@ h4 {
 }
 
 #contact-button:hover {
-  background-color: thistle;
-  color: black;
-  border: none;
-
+  border-radius: 1rem;
 }
 
 /* styling for navbar buttons */
@@ -215,7 +214,7 @@ h4 {
 #icon {
   display: flex;
   flex-direction: column;
-  width: 30px;
+  width: 35px;
   height: auto;
   align-items: center;
   margin-right: 1.5vw;
@@ -256,4 +255,14 @@ h4 {
   color: rgb(23, 22, 22);
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
